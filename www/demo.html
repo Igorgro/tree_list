@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Tree list demo</title>
+</head>
+<body>
+    <ul style="position: absolute;left:10px; top:10px;" class="tree">
+        <li class="tree-item root"><div class="tree-item-icon tag-object"></div><span class="tree-item-title">Root</span>
+            <ul class="subtree">
+                <li class="tree-item">
+                    <div class="tree-item-icon tag-number"></div>
+                    <span class="tree-item-title">Tree item title 1</span>
+                    <span class="tree-item-content">Tree item content 1</span>
+                </li>
+                <li class="tree-item">
+                    <div class="tree-item-icon tag-boolean"></div>
+                    <span class="tree-item-title">Tree item title 2</span>
+                    <span class="tree-item-content">Tree item content 2</span>
+                </li>
+                <li class="tree-item">
+                    <div class="tree-item-icon tag-list"></div>
+                    <span class="tree-item-title">Tree item title 3</span>
+                    <span class="tree-item-content">Tree item content 3</span>
+                    <ul class="subtree">
+                        <li class="tree-item">
+                            <div class="tree-item-icon tag-number"></div>
+                            <span class="tree-item-title">Subtree item title 1</span>
+                            <span class="tree-item-content">Subtree item content 1</span>
+                        </li>
+                        <li class="tree-item">
+                            <div class="tree-item-icon tag-number"></div>
+                            <span class="tree-item-title">Subtree item title 2</span>
+                            <span class="tree-item-content">Subtree item content 2</span>
+                        </li>
+                        <li class="tree-item">
+                            <div class="tree-item-icon tag-number"></div>
+                            <span class="tree-item-title">Subtree item title 3</span>
+                            <span class="tree-item-content">Subtree item content 3</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tree-item">
+                    <div class="tree-item-icon tag-number"></div>
+                    <span class="tree-item-title">Tree item title 4</span>
+                    <span class="tree-item-content">Tree item content 4</span>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>
