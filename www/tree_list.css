@@ -1,0 +1,86 @@
+body{
+    width:100%;
+    height:100%;
+    font-family: "Microsoft Sans Serif";
+    font-size: 11pt;
+}
+tree{
+    padding-left: 0px;
+}
+.subtree{
+    margin-left: -20px;
+    margin-top: 0px;
+    position: relative;
+    margin-bottom: -4px;
+}
+.tree-item{
+    max-width: 900px;
+    list-style-type: none;
+    padding-left: 12px;
+    margin-left: -12px;
+    position: relative;
+    padding-top: 8px;
+    margin-top: -2px;
+}
+.tree-item:not(:last-child):not(.root){
+    border-left: solid #999999 1px;
+}
+.tree-item>img{
+    position: relative;
+    top:2px;
+    margin-right: 4px;
+}
+
+.tree-item:not(:last-child):not(.root)::before {
+    position: absolute;
+    content: "";
+    width:14px;
+    height:18px;
+    border-bottom: solid #999999 1px;
+    top:0px;
+    left:0px;
+}
+.tree-item:last-child:not(.root):before {
+    position: absolute;
+    content: "";
+    width:15px;
+    height:18px;
+    border-bottom: solid #999999 1px;
+    top:0px;
+    left:-1px;
+    border-left: solid #999999 1px;
+}
+.tree-item:last-child{
+    border-left: 1px solid transparent;
+}
+.tree-item-title {
+    font-weight: bold;
+}
+.tree-item-content{
+    word-wrap: break-spaces;
+    margin-left: 2px;
+}
+
+.tree-item-icon{
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    margin-right: 2px;
+    width: 16px;
+    height: 16px;
+}
+.tree-item-icon.tag-number{
+    background-image: url("icons/document-number.png");
+}
+.tree-item-icon.tag-boolean{
+    background-image: url("icons/document-boolean.png");
+}
+.tree-item-icon.tag-object{
+    background-image: url("icons/document-block.png");
+}
+.tree-item-icon.tag-list{
+    background-image: url("icons/document-list.png");
+}
+.tree-item-icon.tag-string{
+    background-image: url("icons/document-text.png");
+}
